@@ -1,0 +1,21 @@
+garage=[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[3.05077191653122,50.5892405085294]},"properties":{"OBJECTID":1,"COMMUNES":"WATTIGNIES","INSEE":59648,"NOM":"LAENNEC","NBRE_PLACE":28,"X":703601.33,"Y":7054683.76}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[2.99476014895762,50.6461375012325]},"properties":{"OBJECTID":2,"COMMUNES":"LOMME","INSEE":59355,"NOM":"MAISON DES ENFANTS","NBRE_PLACE":28,"X":699628.75,"Y":7061022.48}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.13823795598267,50.6989190239052]},"properties":{"OBJECTID":3,"COMMUNES":"MOUVAUX","INSEE":59421,"NOM":"3 SUISSES","NBRE_PLACE":18,"X":709784.03,"Y":7066912.8}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.07775039880028,50.6055070903903]},"properties":{"OBJECTID":4,"COMMUNES":"RONCHIN","INSEE":59507,"NOM":"MAIRIE","NBRE_PLACE":28,"X":705513.17,"Y":7056497.8}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.15879520654658,50.7204397407438]},"properties":{"OBJECTID":5,"COMMUNES":"TOURCOING","INSEE":59599,"NOM":"CENTRE","NBRE_PLACE":28,"X":711234.18,"Y":7069313.85}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.07501648611772,50.6456753131514]},"properties":{"OBJECTID":6,"COMMUNES":"LA MADELEINE","INSEE":59368,"NOM":"ROMARIN","NBRE_PLACE":18,"X":705315.06,"Y":7060973.49}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[2.98871093495061,50.6112599637129]},"properties":{"OBJECTID":7,"COMMUNES":"HAUBOURDIN","INSEE":59286,"NOM":"JARDIN PUBLIC","NBRE_PLACE":28,"X":699199.6,"Y":7057136.16}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.04991062822204,50.6177443159972]},"properties":{"OBJECTID":8,"COMMUNES":"LILLE","INSEE":59350,"NOM":"PORTE DES POSTES","NBRE_PLACE":58,"X":703538.23,"Y":7057859.75}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.2144727853755,50.701465403438]},"properties":{"OBJECTID":9,"COMMUNES":"WATTRELOS","INSEE":59650,"NOM":"CENTRE","NBRE_PLACE":18,"X":715178.9,"Y":7067208.62}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.14619609859488,50.6748823670632]},"properties":{"OBJECTID":10,"COMMUNES":"CROIX","INSEE":59163,"NOM":"CENTRE","NBRE_PLACE":68,"X":710352.24,"Y":7064235.21}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.13001003697661,50.6641760320109]},"properties":{"OBJECTID":11,"COMMUNES":"WASQUEHAL","INSEE":59646,"NOM":"PAVE DE LILLE","NBRE_PLACE":28,"X":709208.06,"Y":7063040.14}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.20057398311041,50.6625736360634]},"properties":{"OBJECTID":12,"COMMUNES":"HEM","INSEE":59299,"NOM":"3 FERMES","NBRE_PLACE":28,"X":714206.25,"Y":7062872.04}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.12794906246652,50.6246328259021]},"properties":{"OBJECTID":13,"COMMUNES":"VILLENEUVE D' ASCQ","INSEE":59009,"NOM":"PONT DE BOIS","NBRE_PLACE":48,"X":709069.23,"Y":7058633.55}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.05108838273013,50.6602236601889]},"properties":{"OBJECTID":14,"COMMUNES":"SAINT ANDRE","INSEE":59527,"NOM":"MAIRIE","NBRE_PLACE":28,"X":703618.66,"Y":7062593.3}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.05349380269983,50.6864399758122]},"properties":{"OBJECTID":15,"COMMUNES":"WAMBRECHIES","INSEE":59636,"NOM":"CHATEAU","NBRE_PLACE":28,"X":703787.06,"Y":7065514.86}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.00078776707174,50.7129531277747]},"properties":{"OBJECTID":16,"COMMUNES":"QUESNOY SR DEULE","INSEE":59482,"NOM":"QUESNOY MAIRIE","NBRE_PLACE":28,"X":700055.74,"Y":7068468.22}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.09613781464274,50.6614077579653]},"properties":{"OBJECTID":17,"COMMUNES":"MARCQ EN BAROEUL","INSEE":59378,"NOM":"CROISE LAROCHE","NBRE_PLACE":18,"X":706809.411,"Y":7062728.2236}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.13823788544201,50.698919061672]},"properties":{"OBJECTID":18,"COMMUNES":"MOUVAUX","INSEE":59421,"NOM":"3 SUISSES","NBRE_PLACE":18,"X":709784.025,"Y":7066912.8042}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[3.11090915952274,50.6423566343812]},"properties":{"OBJECTID":19,"COMMUNES":"MONS EN BAROEUL","INSEE":59410,"NOM":"MAIRIE","NBRE_PLACE":28,"X":707858.642,"Y":7060606.679}}
+];

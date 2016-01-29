@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+       
+	    <link rel="stylesheet" href="css/fontawesome.css" />
+		<link rel="stylesheet" href="css/jquerymobile.min.css" />
+		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" href="css/nativedroid2.css" />
+		<script src='js/jquery.js'></script>
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>MELMOB</title>
+		<script type="text/javascript">
+     	document.addEventListener("deviceready", onDeviceReady, false);
+
+		// device APIs are available
+		//
+		function onDeviceReady() {
+			navigator.geolocation.getCurrentPosition(onSuccess, onError);
+		   
+		}
+		var myMarker;
+		var markersActive;
+		function onSuccess(position) {
+			 myLat = position.coords.latitude;
+			 myLong = position.coords.longitude;
+			 m = L.marker(new L.LatLng(myLat , myLong), {
+							icon: L.mapbox.marker.icon({
+								'marker-color': '1087bf'
+							}),
+							draggable: false
+						}).bindPopup("c'est vous !").addTo(map) ;
+			 map.panTo(m.getLatLng());;
+			 myMarker = m;
+        }
+			 
+		function onError(error) {
+			alert('code: '    + error.code    + '\n' +
+              'message: ' + error.message + '\n');
+		}
+    
+
+		</script>
+    </head>
+    <body>
+       <div data-role="page">
+
+			<div data-role="header" style="background-color: #ffffff;color: #F44336;" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				 <div class="ui-grid-b">
+					<div class="ui-block-a" style="width:1%;height:0px;"></div>
+					<div class="ui-block-b" style="width:92%;"><img border="0" src="images/logo.png" alt="Logo, Facebook" style="width: 100%;height: 100%;"/></div>
+					<div class="ui-block-c"style="width:1%;height:0px;display:none;"></div>
+				 </div>
+					
+				
+			</div>
+
+			<div role="main" class="ui-content" data-inset="false">
+					<div class="ui-grid-b">
+						<div class="ui-block-a">	
+							<a href="#transport" class=""><img src="images/transport.png" alt="transport"></a>
+							<div class="imgCaption">Transport</div>
+						</div>
+						<div class="ui-block-b">	
+							<a href="#velo" class=""><img src="images/velo.png" alt="Vélo"></a> 
+							<div class="imgCaption">Vélo</div>
+						</div>
+						<div class="ui-block-c">	
+							<a href="#" class=""><img src="images/voiture.png" alt="Voiture"></a>
+							<div class="imgCaption">Voiture</div>
+						</div>
+						<div class="ui-block-a">	
+							<a href="#culture" class=""><img src="images/culture.png" alt="Culture"></a>
+							<div class="imgCaption">Culture</div>
+						</div>
+						<div class="ui-block-b">	
+							<a href="#sport" class=""><img src="images/sport.png" alt="Sport"></a> 
+							<div class="imgCaption">Sport</div>
+						</div>
+						<div class="ui-block-c">	
+							<a href="#" class=""><img src="images/nature.png" alt="Nature"></a>
+							<div class="imgCaption">Nature</div>
+						</div>
+						<div class="ui-block-a">	
+							<a href="#liste" class=""><img id="dechet" src="images/dechet.png" alt="Dechet"></a>
+							<div class="imgCaption">Dechets</div>
+						</div>
+						<div class="ui-block-b">	
+							<a href="#" class=""><img src="images/services.png" alt="Service"></a> 
+							<div class="imgCaption">Services publics</div>
+						</div>
+						<div class="ui-block-c">	
+							<a href="#" class=""><img src="images/voiture.png" alt="Voiture"></a>
+							<div class="imgCaption">Voiture</div>
+						</div>
+					</div><!-- /grid-c -->
+				</div>
+		</div>
+	   
+	    <div data-role="page" id="sport">
+			
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				
+				<a href="#"  data-rel="back"><</a>
+
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Sport</h1>
+					
+			</div>
+			<div role="main" class="ui-content" data-inset="false">
+					<div class="ui-grid-b">
+						<div class="ui-block-a">	
+							<a href="#liste" class=""><img id="piscine" src="images/piscine.png" alt="Métro"></a>
+							<div class="imgCaption">Piscine</div>
+						</div>
+						<div class="ui-block-b">	
+							<a href="#liste" class=""><img id="" src="images/vide.png" alt="Tram"></a> 
+							<div class="imgCaption">Rien</div>
+						</div>
+						<div class="ui-block-c">	
+							<a href="#liste" class=""><img id="" src="images/vide.png" alt="Bus"></a> 
+							<div class="imgCaption">Rien</div>
+						</div>
+					</div><!-- /grid-c -->
+				</div>
+		</div>
+	   
+	    <div data-role="page" id="transport">
+			
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				
+				<a href="#"  data-rel="back"><</a>
+
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Transport</h1>
+					
+			</div>
+			<div role="main" class="ui-content" data-inset="false">
+					<div class="ui-grid-b">
+						<div class="ui-block-a">	
+							<a href="#liste" class=""><img id="metro" src="images/station.png" alt="Métro"></a>
+							<div class="imgCaption">Métro</div>
+						</div>
+						<div class="ui-block-b">	
+							<a href="#liste" class=""><img id="tram" src="images/station.png" alt="Tram"></a> 
+							<div class="imgCaption">TramWay</div>
+						</div>
+						<div class="ui-block-c">	
+							<a href="#liste" class=""><img id="bus" src="images/station.png" alt="Bus"></a> 
+							<div class="imgCaption">Bus</div>
+						</div>
+					</div><!-- /grid-c -->
+				</div>
+		</div>
+	   
+	    <div data-role="page" id="culture">
+			
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				
+				<a href="#"  data-rel="back"><</a>
+
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Culture</h1>
+					
+			</div>
+			<div role="main" class="ui-content" data-inset="false">
+					<div class="ui-grid-b">
+						<div class="ui-block-a">	
+							<a href="#liste" class=""><img id="musee" src="images/musee.png" alt="Musée"></a>
+							<div class="imgCaption">Musée</div>
+						</div>
+						<div class="ui-block-b">	
+							<a href="#liste" class=""><img id="biblio" src="images/biblio.png" alt="Bibliothèque"></a> 
+							<div class="imgCaption">Bibliothèque</div>
+						</div>
+						<div class="ui-block-c">	
+							<a href="#liste" class=""><img id="cinema" src="images/cine.png" alt="Cinéma"></a> 
+							<div class="imgCaption">Cinéma & Théatre</div>
+						</div>
+					</div><!-- /grid-c -->
+				</div>
+		</div>
+	   
+	    <div data-role="page" id="velo">
+			
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				
+				<a href="#"  data-rel="back"><</a>
+
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Vélo</h1>
+					
+			</div>
+			<div role="main" class="ui-content" data-inset="false">
+					<div class="ui-grid-a">
+						<div class="ui-block-a">	
+							<a href="#liste" class=""><img id="vlille" src="images/vlille.png" alt="V'Lille"></a>
+							<div class="imgCaption">V'Lille</div>
+						</div>
+						<div class="ui-block-b">	
+							<a href="#liste" class=""><img id="garage" src="images/garageVelo.png" alt="Abris Vélos"></a> 
+							<div class="imgCaption">Abris à vélo</div>
+						</div>
+					</div><!-- /grid-c -->
+				</div>
+		</div>
+		<div data-role="page" id="liste">
+			
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				
+				<a href="#"  data-rel="back"><</a>
+
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Résultat</h1>
+					
+			</div>
+
+			<div role="main" class="ui-content" data-inset="false">
+				<ul data-role="listview" data-icon="false">
+					<li data-role="list-divider">
+						Linked List
+					</li>
+					<div id='info'></div>
+					
+				</ul>
+			</div>
+		</div>
+		<div data-role="page" id="mapPage">
+			<script type="text/javascript">
+			
+			</script>
+				
+			
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				
+				<a href="#"  data-rel="back"><</a>
+
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Carte</h1>
+					
+			</div>
+
+			<div role="main" class="ui-content" id="map_canvas" data-inset="false">
+				<div id='map' class='custom-popup'></div>
+				
+				<link href='css/mapbox.css' rel='stylesheet' />
+				<script src='data/vlille.json'></script>
+				<script src='data/bibli.json'></script>
+				<script src='data/cine.json'></script>
+				<script src='data/musee.json'></script>
+				<script src='data/dechet.json'></script>
+				<script src='data/garage.json'></script>
+				<script src='data/piscine.json'></script>
+				<script src='data/metro.json'></script>
+				<script src='data/tram.json'></script>
+				<script src='js/mapbox.js'></script>
+				<link href='css/mapbox.css' rel='stylesheet' />
+				<script src='js/leaflet.markercluster.js'></script>
+				<link href='css/MarkerCluster.css' rel='stylesheet' />
+				<link href='css/MarkerCluster.Default.css' rel='stylesheet' />
+				<script src='js/map.js'></script>
+				<script type="text/javascript">
+					L.mapbox.accessToken = 'pk.eyJ1IjoiamZhbGxvbm1lbCIsImEiOiJjaWp1NHJyMmEwMDExdm9raXhobGNsZXFqIn0.Os40GK7CD8NIpb6cFEVerg';
+					var map = L.mapbox.map('map', 'mapbox.streets',{zoomControl: false})
+					.setView([50.642058496869964 , 3.0760860443115234], 25);
+				</script>
+			</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="vendor/waves/waves.min.js"></script>
+		<script src="vendor/wow/wow.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
